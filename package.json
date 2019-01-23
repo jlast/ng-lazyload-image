@@ -1,6 +1,6 @@
 {
   "name": "ng-lazyload-image-angular-universal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
