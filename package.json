@@ -1,5 +1,5 @@
 {
-  "name": "ng-lazyload-image",
+  "name": "ng-lazyload-image-angular-universal",
   "version": "1.0.1",
   "scripts": {
     "ng": "ng",
