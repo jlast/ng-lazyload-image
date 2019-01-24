@@ -1,6 +1,28 @@
 {
   "name": "ng-lazyload-image-angular-universal",
-  "version": "1.0.4",
+  "description": "This is an extension from ng-lazyload-image, made available for Angular Universal.",
+  "version": "5.0.0",
+  "license": "ISC",
+  "author": {
+    "name": "Jeroen van der Last",
+    "email": "info@jeroenvdlast.nl"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/jlast/ng-lazyload-image-angular-universal"
+  },
+  "keywords": [
+    "lazy-load",
+    "lazy-image",
+    "performance",
+    "angular",
+    "universal",
+    "angular-universal"
+  ],
+  "bugs": {
+    "url": "https://github.com/jlast/ng-lazyload-image-angular-universal/issues"
+  },
+  "homepage": "https://github.com/jlast/ng-lazyload-image-angular-universal",
   "peerDependencies": {
     "@angular/common": "^7.2.0",
     "@angular/core": "^7.2.0"
