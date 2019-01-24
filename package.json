@@ -2,6 +2,7 @@
   "name": "ng-lazyload-image-angular-universal",
   "version": "1.0.3",
   "scripts": {
+    "publish": "npm run-script build && cd dist/ng-lazyload-image-angular-universal && npm publish",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
