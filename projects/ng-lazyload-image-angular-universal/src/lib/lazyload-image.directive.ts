@@ -11,20 +11,20 @@ import {
   Optional,
   Output,
   PLATFORM_ID
-} from "@angular/core";
-import { isPlatformServer } from "@angular/common";
-import { ReplaySubject } from "rxjs";
-import { switchMap, tap, first } from "rxjs/operators";
-import { cretateHooks } from "./hooks-factory";
-import { lazyLoadImage } from "./lazyload-image";
-import { Attributes, HookSet, ModuleOptions } from "./types";
+} from '@angular/core';
+import { isPlatformServer } from '@angular/common';
+import { ReplaySubject } from 'rxjs';
+import { switchMap, tap, first } from 'rxjs/operators';
+import { cretateHooks } from './hooks-factory';
+import { lazyLoadImage } from './lazyload-image';
+import { Attributes, HookSet, ModuleOptions } from './types';
 
 @Directive({
-  selector: "[lazyLoad]"
+  selector: '[lazyLoad]'
 })
 export class LazyLoadImageDirective
   implements OnChanges, AfterContentInit, OnDestroy {
-  @Input("lazyLoad") lazyImage; // The image to be lazy loaded
+  @Input('lazyLoad') lazyImage; // The image to be lazy loaded
   @Input() defaultImage: string; // The image to be displayed before lazyImage is loaded
   @Input() errorImage: string; // The image to be displayed if lazyImage load fails
   @Input() scrollTarget: any; // Scroll container that contains the image and emits scoll events
@@ -42,7 +42,7 @@ export class LazyLoadImageDirective
     el: ElementRef,
     ngZone: NgZone,
     @Inject(PLATFORM_ID) private platformId: Object,
-    @Optional() @Inject("options") options?: ModuleOptions
+    @Optional() @Inject('options') options?: ModuleOptions
   ) {
     this.elementRef = el;
     this.ngZone = ngZone;
